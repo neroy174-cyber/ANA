@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INKGLOW - Bijoux & Accessoires de Luxe</title>
+    <meta name="description" content="INKGLOW — Bijoux & accessoires de luxe. Découvrez notre collection exclusive de bijoux et accessoires élégants." />
+    <link rel="canonical" href="./" />
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <meta property="og:title" content="INKGLOW - Bijoux & Accessoires de Luxe" />
+    <meta property="og:description" content="Découvrez notre collection exclusive de bijoux et accessoires élégants." />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="fr_FR" />
+    <meta name="twitter:card" content="summary" />
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">INKGLOW</div>
+            <ul id="site-nav" class="nav-links" aria-label="Navigation principale">
+
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#products">Produits</a></li>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#testimonials">Témoignages</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <button class="hamburger" type="button" aria-label="Ouvrir le menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+        </nav>
+    </header>
+
+    <main id="main">
+        <section id="home" class="hero">
+            <div class="hero-content" data-aos="fade-up">
+                <h1>Éclat & Élégance</h1>
+                <p>Découvrez notre collection exclusive de bijoux et accessoires INKGLOW</p>
+                <a href="#products" class="cta-button">Explorer la Collection</a>
+            </div>
+            <div class="hero-bg"></div>
+        </section>
+<section id="products" class="products">
+    <div class="container">
+        <h2 data-aos="fade-up">Nos Produits</h2>
+        <div class="products-grid"></div>
+    </div>
+</section>
+
+
+        <section id="about" class="about">
+            <div class="container">
+                <div class="about-content" data-aos="fade-up">
+                    <h2>À propos d'INKGLOW</h2>
+                    <p>INKGLOW incarne l'essence du luxe moderne. Chaque pièce est conçue avec une attention méticuleuse aux détails, alliant savoir-faire traditionnel et design contemporain. Notre mission est de vous offrir des bijoux et accessoires qui transcendent le temps et les tendances.</p>
+                    <div class="about-stats">
+                        <div class="stat" data-aos="fade-up" data-aos-delay="100">
+                            <h3>500+</h3>
+                            <p>Clients Satisfaits</p>
+                        </div>
+                        <div class="stat" data-aos="fade-up" data-aos-delay="200">
+                            <h3>100+</h3>
+                            <p>Pièces Uniques</p>
+                        </div>
+                        <div class="stat" data-aos="fade-up" data-aos-delay="300">
+                            <h3>5★</h3>
+                            <p>Note Moyenne</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="testimonials">
+            <div class="container">
+                <h2 data-aos="fade-up">Témoignages</h2>
+                <div class="testimonials-grid">
+                    <div class="testimonial" data-aos="fade-up" data-aos-delay="100">
+                        <p>"Les bijoux INKGLOW sont d'une qualité exceptionnelle. Chaque pièce raconte une histoire d'élégance."</p>
+                        <cite>- Mehdi O.</cite>
+                    </div>
+                    <div class="testimonial" data-aos="fade-up" data-aos-delay="200">
+                        <p>"Service impeccable et produits qui dépassent toutes mes attentes. Hautement recommandé."</p>
+                        <cite>- Ghita L.</cite>
+                    </div>
+                    <div class="testimonial" data-aos="fade-up" data-aos-delay="300">
+                        <p>"INKGLOW a transformé ma façon de voir les accessoires de luxe. Magnifique craftsmanship."</p>
+                        <cite>- Aya A.</cite>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 data-aos="fade-up">Contactez-nous</h2>
+                <div class="contact-content">
+                    <div class="contact-info" data-aos="fade-up" data-aos-delay="100">
+                        <h3>Prêt à briller ?</h3>
+                        <p>Contactez-nous pour personnaliser votre pièce unique ou passer commande.</p>
+                        <div class="contact-details">
+                            <p><strong>Email:</strong> inkglow.fashion@gmail.com</p>
+                            <p><strong>Téléphone:</strong> +212 659436806</p>
+                        </div>
+                    </div>
+                    <form class="contact-form" data-aos="fade-up" data-aos-delay="200" onsubmit="handleFormSubmit(event)">
+                        <label for="name" class="sr-only">Votre nom</label>
+                        <input type="text" id="name" name="name" placeholder="Votre nom" autocomplete="name" required>
+
+                        <label for="phone" class="sr-only">Votre numéro</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Votre numéro" autocomplete="tel" required>
+
+                        <label for="email" class="sr-only">Votre email</label>
+                        <input type="email" id="email" name="email" placeholder="Votre email" autocomplete="email" required>
+
+                        <button type="submit" class="submit-btn">Envoyer via WhatsApp</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 INKGLOW. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <!-- Product Details Modal -->
+    <div class="product-modal" id="productModal" role="dialog" aria-modal="true" aria-labelledby="productModalTitle" hidden>
+        <div class="product-modal__backdrop" data-modal-close="true"></div>
+        <div class="product-modal__panel" role="document">
+            <button class="product-modal__close" type="button" aria-label="Fermer" data-modal-close="true">&times;</button>
+
+            <div class="product-modal__content">
+                <div class="product-modal__media">
+                    <img id="productModalImage" src="" alt="" loading="lazy" decoding="async" />
+                </div>
+
+                <div class="product-modal__details">
+                    <h2 id="productModalTitle" class="product-modal__title"></h2>
+                    <div id="productModalPrice" class="product-modal__price"></div>
+
+                    <p id="productModalDescription" class="product-modal__description"></p>
+
+                    <div class="product-modal__actions">
+                        <button id="productModalOrderBtn" class="order-btn" type="button">Commander</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <a class="skip-link" href="#main">Aller au contenu</a>
+
+    <div class="whatsapp-float" role="button" tabindex="0" aria-label="Contacter via WhatsApp" onclick="openWhatsApp('Bonjour, je souhaite en savoir plus sur vos produits.')">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="Icône WhatsApp">
+    </div>
+
+    <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script defer src="products.js"></script>
+    <script defer src="scipt.js"></script>
+    <script type="module" defer src="./firestoreRuntime.js"></script>
+
+
+</body>
+</html>
+
